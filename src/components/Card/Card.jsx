@@ -6,7 +6,7 @@ function Card({ item }) {
       <img src={item.flags.png} alt="flag" />
 
       <div className="details">
-        <h3>{item.name}</h3>
+        <h3>{item.name.common}</h3>
         <div className="detail">
           <p>
             <span>Population: </span>
@@ -14,7 +14,7 @@ function Card({ item }) {
           </p>
           <p>
             <span>Region: </span>
-            {item.subregion}
+            {item.region}
           </p>
           <p>
             <span>Capital: </span>
