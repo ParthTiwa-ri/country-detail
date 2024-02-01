@@ -1,0 +1,42 @@
+.search {
+  margin: 5rem 6rem 4.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 2rem;
+  font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  height: 5rem;
+  width: 19rem;
+  position: relative;
+}
+
+.input input {
+  width: 100%; /* or any desired width */
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 5rem;
+  width: 40%;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  padding: 2rem;
+}
+
+input {
+  padding: 1rem 2rem;
+  border: none;
+  color: gray;
+  outline: none;
+  font-size: 17px;
+}

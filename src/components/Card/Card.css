@@ -1,0 +1,30 @@
+.card {
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  border-radius: 6px;
+  height: 35rem;
+  transition: all 400ms ease;
+}
+
+.details {
+  padding: 2.2rem 3.3rem;
+  font-size: 15px;
+}
+
+.detail {
+  margin-top: 1.5rem;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+img {
+  width: 27rem;
+  height: 17rem;
+}
+.card:hover {
+  transform: scale(1.1);
+}
