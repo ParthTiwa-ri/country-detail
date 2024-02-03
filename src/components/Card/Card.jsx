@@ -5,7 +5,7 @@ function Card({ item }) {
   return (
     <Link to={`countries/${item.ccn3}`} className="card">
       <div>
-        <img src={item.flags.svg} alt="flag" />
+        <img src={item.flags.png} alt="flag" />
 
         <div className="details">
           <h3>{item.name.common}</h3>
