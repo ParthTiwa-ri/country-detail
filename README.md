@@ -8,6 +8,7 @@ This React application provides information about various countries around the w
 - **Country Cards:** Homepage displays cards for each country, showcasing basic information.
 - **Country Details:** Clicking on a country card leads to a detailed page with comprehensive information about the selected country.
 - **Border Countries:** On the country details page, users can see a list of bordering countries. Clicking on a border country opens its detailed page.
+- **Dark Mode:** Switch to a sleek dark interface for comfortable viewing in low-light environments.
 - **Responsive Design:** Ensures optimal viewing experience across devices, enhancing usability.
 
 ## 🛠️ Technologies Used:
@@ -64,6 +65,8 @@ Follow these steps to set up the project locally:
 ## 🖼️ Screenshots
 <img width="1426" alt="Screenshot 2024-02-04 at 12 45 31 AM" src="https://github.com/ParthTiwa-ri/country-detail/assets/152166714/24c609aa-0cc4-405b-97a3-f1412eafcb4b">
 <img width="1437" alt="Screenshot 2024-02-04 at 12 45 44 AM" src="https://github.com/ParthTiwa-ri/country-detail/assets/152166714/14a016be-93c4-4637-951b-aed435bf5abf">
+<img width="1440" alt="Screenshot 2024-02-04 at 4 01 24 AM" src="https://github.com/ParthTiwa-ri/country-detail/assets/152166714/2b3fa39b-61ea-4a73-9b0e-2d96b1d443e7">
+<img width="1440" alt="Screenshot 2024-02-04 at 4 04 30 AM" src="https://github.com/ParthTiwa-ri/country-detail/assets/152166714/31f9b715-f80e-4180-8f7f-25df7aa6f048">
 <img width="1440" alt="Screenshot 2024-02-04 at 12 45 11 AM" src="https://github.com/ParthTiwa-ri/country-detail/assets/152166714/3f643195-fc57-4270-80f7-7711f9829a7b">
 <img width="1430" alt="Screenshot 2024-02-04 at 12 44 54 AM" src="https://github.com/ParthTiwa-ri/country-detail/assets/152166714/60707094-73e7-45b9-abfd-66ef258a9f20">
 
