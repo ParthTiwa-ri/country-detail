@@ -16,6 +16,7 @@ This React application provides information about various countries around the w
 - **React Router:** For navigation between pages and handling routes.
 - **React Context API:** For global state management, distributing country data to components.
 - **Icon Library:** Utilized for visual representation, ensuring a user-friendly experience.
+-  **Fetch API:** Integrated to fetch country data from a remote server, providing real-time information to users.
 
 
   ![React](https://img.shields.io/badge/-React-61DBFB?style=for-the-badge&labelColor=black&logo=react&logoColor=61DBFB)
