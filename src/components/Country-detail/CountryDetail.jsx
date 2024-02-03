@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useCountries } from "../../CustomHooks/useCountries";
 import Loader from "../Loader/Loader";
+import CountryShowInfo from "../CountryShowInfo/CountryShowInfo";
 
 function CountryDetail() {
   const { id } = useParams();
@@ -9,12 +10,7 @@ function CountryDetail() {
     `https://restcountries.com/v3.1/alpha/${id}`
   );
 
-  console.log(isLoading);
-  return (
-    <div className="cards">
-      {isLoading ? <Loader /> : <h1>{data[0].name.common}</h1>}
-    </div>
-  );
+  return <div>{isLoading ? <Loader /> : <CountryShowInfo data={data} />}</div>;
 }
 
 export default CountryDetail;

@@ -11,7 +11,7 @@ export function useCountries(url) {
           // await new Promise((resolve) => setTimeout(resolve, 2000));
           const res = await fetch(url);
           const dataload = await res.json();
-          console.log(dataload);
+
           setData(dataload);
         } catch (e) {
           throw new Error(e.message);

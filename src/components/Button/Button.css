@@ -1,0 +1,19 @@
+.country__details--button,
+.country__details--button:link,
+.country__details--button:visited {
+  width: auto;
+  height: 25px;
+  padding: 5px 25px;
+  background-color: #fafafa;
+  color: #111517;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  transition: background-color 1s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
