@@ -4,7 +4,7 @@ import Search from "../components/Search/Search";
 
 function Home() {
   return (
-    <div className="app">
+    <div style={{ minHeight: "100vh" }} className="app">
       <Header />
       <Search />
       <Cards />
