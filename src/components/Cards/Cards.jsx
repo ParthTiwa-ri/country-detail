@@ -1,33 +1,21 @@
-import { useEffect, useState } from "react";
-// import { data } from "../../data/data";
+import { useCountries } from "../../CustomHooks/useCountries";
 import Card from "../Card/Card";
+import Loader from "../Loader/Loader";
 
 import "./Cards.css";
-function Cards() {
-  const [data, setData] = useState([]);
-  const [isloading, setLoading] = useState(false);
 
-  useEffect(function () {
-    async function fetchdata() {
-      try {
-        setLoading(true);
-        const res = await fetch("https://restcountries.com/v3.1/all");
-        const dataload = await res.json();
-        console.log(dataload);
-        setData(dataload);
-        setLoading(false);
-      } catch (e) {
-        throw new Error(e.message);
-      }
-    }
-    fetchdata();
-  }, []);
+function Cards() {
+  const { data, isLoading } = useCountries(
+    "https://restcountries.com/v3.1/all"
+  );
 
   return (
     <div className="cards">
-      {data.map((item, index) => (
-        <Card key={index} item={item} isloading={isloading} />
-      ))}
+      {isLoading ? (
+        <Loader />
+      ) : (
+        data.map((item, index) => <Card key={index} item={item} />)
+      )}
     </div>
   );
 }

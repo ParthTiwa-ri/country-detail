@@ -1,6 +1,9 @@
 .cards {
   margin: 0 6rem;
-  padding-bottom: 30rem;
+  /* padding-bottom: 30rem; */
+
+  /* remove this after search baar */
+  margin-top: 7rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, 30rem);
   grid-gap: 3rem;
