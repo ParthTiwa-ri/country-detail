@@ -1,3 +1,4 @@
+/* Default styles */
 .search {
   margin: 5rem 6rem 4.5rem;
   display: flex;
@@ -42,6 +43,7 @@ input {
   outline: none;
   font-size: 17px;
 }
+
 .filterMenu {
   position: absolute;
   z-index: 5;
@@ -60,4 +62,24 @@ input {
 
 .filterMenu p:hover {
   color: gray;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .search {
+    margin: 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .filter {
+    width: 30%;
+
+    margin-bottom: 2rem;
+  }
+
+  .input {
+    width: 100%;
+  }
 }

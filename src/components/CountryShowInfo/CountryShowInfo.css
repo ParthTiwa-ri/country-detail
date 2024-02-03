@@ -1,125 +1,85 @@
-.container {
-  margin: 0 6rem;
-  /* padding-bottom: 30rem; */
-
-  /* remove this after search baar */
-  margin-top: 20rem;
-  display: flex;
-  min-height: 35rem;
-}
-.container .img {
-  /* max-width: 45rem;
-  max-height: 35rem; */
-  width: 40%;
-}
-
-.container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.container .countryDetails {
-  width: 60%;
-}
-.countryDetails h1 {
-  font-size: 27px;
-}
-.countryDetails {
-  display: flex;
-  padding: 2.5rem 8rem;
-  flex-direction: column;
-  line-height: 1.8; /* Adjust the value as needed */
-  /* letter-spacing: 0.5px; Adjust the value as needed */
-}
-
-.countryDetails .subcontainer {
+/* Default styles */
+.search {
+  margin: 5rem 6rem 4.5rem;
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
 }
 
-.countryDetails p {
+.filter {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: white;
+  padding: 2rem;
   font-size: 14px;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  height: 5rem;
+  width: 19rem;
+  position: relative;
+  cursor: pointer;
+  justify-content: space-between;
 }
 
-.border span {
-  font-size: 18px;
+.input input {
+  width: 100%; /* or any desired width */
 }
-.border {
-  margin-top: 5rem;
+
+.input {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Allow flex items to wrap */
-  gap: 1rem; /* Add gap between items */
+  background-color: white;
+  height: 5rem;
+  width: 40%;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  padding: 2rem;
 }
-.border > p {
-  font-size: 16px;
+
+input {
+  padding: 1rem 2rem;
+  border: none;
+  color: gray;
+  outline: none;
+  font-size: 17px;
 }
-.btn-back {
+
+.filterMenu {
   position: absolute;
-  top: 10rem;
-  left: 6rem;
-
-  color: black !important; /* Change color to black */
-  text-decoration: none !important; /* Remove underline */
-}
-.btnflex {
+  z-index: 5;
+  width: 190px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  transition: background-color 1s ease-in-out;
+  top: calc(100% + 3px); /* Position below the filter */
   display: flex;
-  align-items: center;
-  padding: 2rem 2rem !important;
+  flex-direction: column;
+  gap: 1rem;
+  left: 0; /* Align with the left edge of the filter */
 }
 
-@media screen and (max-width: 999px) {
-  .container {
-    margin: 0 3rem;
-    margin-top: 10rem;
-    flex-direction: column; /* Change to column layout */
-    align-items: center; /* Center items */
-  }
-
-  .container .img,
-  .container .countryDetails {
-    width: 80%; /* Adjust width for full width */
-    margin-bottom: 2rem; /* Add spacing between sections */
-  }
-
-  .countryDetails {
-    padding: 2.5rem 3rem; /* Adjust padding */
-  }
-
-  .btn-back {
-    top: 8rem;
-    left: 3rem;
-  }
+.filterMenu p:hover {
+  color: gray;
 }
 
-@media screen and (max-width: 599px) {
-  .container {
-    margin: 0 2rem; /* Adjusted margin */
-    margin-top: 9em; /* Adjusted margin-top */
-  }
-
-  .container .img,
-  .container .countryDetails {
-    width: 100%; /* Adjusted width */
-  }
-
-  .countryDetails {
-    padding: 2.5rem; /* Adjusted padding */
-  }
-
-  .btn-back {
-    top: 8rem; /* Adjusted top position */
-    left: 2rem; /* Adjusted left position */
-  }
-}
-@media screen and (max-width: 599px) {
-  .countryDetails .subcontainer {
-    display: flex;
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .search {
+    margin: 3rem;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 2rem;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .filter {
+    min-width: 20rem;
+    margin-bottom: 2rem;
+    align-self: flex-start; /* Align to the start of the container */
+  }
+
+  .input {
+    width: 90%;
   }
 }
