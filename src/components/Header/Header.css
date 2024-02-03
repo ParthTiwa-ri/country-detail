@@ -6,6 +6,7 @@
   align-items: center;
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
   padding: 2rem 6rem;
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
 }
 
 .header h2 {
@@ -15,9 +16,9 @@
 
 .darkbtn {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   align-items: center;
-  display: none;
+  /* display: none; */
 }
 
 .darkbtn span {
@@ -35,7 +36,18 @@
     font-size: 16px; /* Adjust font size for smaller screens */
   }
 
-  .darkbtn {
-    display: none; /* Hide button on smaller screens if needed */
-  }
+  /* .darkbtn {
+    display: none; Hide button on smaller screens if needed
+  } */
+}
+
+.light-mode-head {
+  background-color: white;
+  color: var(--very-dark-blue-light);
+}
+
+.dark-mode-head {
+  background-color: var(--dark-blue) !important;
+  color: white;
+  filter: grayscale(var(--image-grayscale));
 }

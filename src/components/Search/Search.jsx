@@ -3,11 +3,13 @@ import { useState } from "react";
 import * as Unicons from "@iconscout/react-unicons";
 import "./Search.css";
 import { useCountries } from "../../CustomHooks/useCountries";
+import { useTheme } from "../../Context/ThemeContext";
 
 function Search() {
   const [searchValue, setSearchValue] = useState("");
   const [selectedRegion, setSelectedRegion] = useState("");
   const [visible, setVisible] = useState(false);
+  const { darkMode } = useTheme();
 
   const handleInputChange = (event) => {
     setSearchValue(event.target.value);
@@ -27,7 +29,7 @@ function Search() {
   );
 
   return (
-    <div className="search">
+    <div className={`search ${darkMode ? "dark-mode" : "light-mode"}`}>
       <form className="input" onSubmit={(e) => e.preventDefault()}>
         <Unicons.UilSearch style={{ outline: "gray", color: "gray" }} />
         <input

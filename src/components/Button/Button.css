@@ -12,10 +12,16 @@
   border: none;
   border-radius: 4px;
   box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
-  transition: background-color 1s ease-in-out;
+  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
 
   /*cursor: pointer;/*
  
   color: black !important; /* Change color to black */
   text-decoration: none !important; /* Remove underline */
+}
+
+.dark-mode-btn {
+  background-color: var(--dark-blue) !important;
+  color: white;
+  filter: grayscale(var(--image-grayscale));
 }

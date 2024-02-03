@@ -16,6 +16,26 @@
 
   /* Dark Mode Text & Light Mode Elements */
   --white: hsl(0, 0%, 100%);
+  --transition-duration: 1s;
+  --image-grayscale: 10%;
+  --image-opacity: 90%;
+  --box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+}
+
+.light-mode,
+.dark-mode {
+  transition: background-color var(--transition-duration);
+}
+
+.light-mode {
+  background-color: var(--very-light-gray);
+  color: var(--very-dark-blue-light);
+}
+
+.dark-mode {
+  background-color: var(--very-dark-blue);
+  color: var(--white);
+  filter: grayscale(var(--image-grayscale));
 }
 
 * {
@@ -29,6 +49,6 @@ html {
 body {
   font-family: "Nunito Sans", sans-serif;
   min-height: 100vh;
-  background-color: #fafafa;
+  background-color: var(--very-light-gray);
   color: #111517;
 }
