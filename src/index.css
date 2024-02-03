@@ -16,7 +16,7 @@
 
   /* Dark Mode Text & Light Mode Elements */
   --white: hsl(0, 0%, 100%);
-  --transition-duration: 1s;
+  --transition-duration: 0.7s;
   --image-grayscale: 10%;
   --image-opacity: 90%;
   --box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
