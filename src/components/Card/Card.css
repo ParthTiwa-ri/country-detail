@@ -28,6 +28,7 @@
 img {
   width: 27rem;
   height: 17rem;
+  object-fit: cover;
 }
 .card:hover {
   transform: scale(1.1);
