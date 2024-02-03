@@ -6,10 +6,11 @@
   margin-top: 20rem;
   display: flex;
   min-height: 35rem;
+  height: 100vh;
 }
 .container .img {
-  /* max-width: 45rem;
-  max-height: 35rem; */
+  /* max-width: 45rem;*/
+  max-height: 35rem;
   width: 40%;
 }
 
