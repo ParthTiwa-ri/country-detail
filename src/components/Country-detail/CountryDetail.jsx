@@ -12,7 +12,7 @@ function CountryDetail() {
   console.log(isLoading);
   return (
     <div className="cards">
-      {isLoading ? <Loader /> : <h1>{data[0]?.name.common}</h1>}
+      {isLoading ? <Loader /> : <h1>{data[0].name.common}</h1>}
     </div>
   );
 }

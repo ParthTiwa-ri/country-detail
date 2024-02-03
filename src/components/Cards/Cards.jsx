@@ -5,9 +5,8 @@ import Loader from "../Loader/Loader";
 import "./Cards.css";
 
 function Cards() {
-  const { data, isLoading } = useCountries(
-    "https://restcountries.com/v3.1/all"
-  );
+  const { data, isLoading } = useCountries("https://restcountries.com/v2/all");
+  
 
   return (
     <div className="cards">

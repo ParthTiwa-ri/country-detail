@@ -8,7 +8,7 @@ function Card({ item }) {
         <img src={item.flags.png} alt="flag" />
 
         <div className="details">
-          <h3>{item.name.common}</h3>
+          <h3>{item.name}</h3>
           <div className="detail">
             <p>
               <span>Population: </span>
