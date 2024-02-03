@@ -28,7 +28,7 @@ function CountryShowInfo({ data }) {
     <>
       <Header />
       <Link to="/">
-        <Button classname="btn-back">
+        <Button classname="btn-back" btnflex="btnflex">
           <Unicons.UilArrowLeft />
           Back
         </Button>

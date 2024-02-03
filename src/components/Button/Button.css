@@ -13,7 +13,9 @@
   border-radius: 4px;
   box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
   transition: background-color 1s ease-in-out;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
+
+  /*cursor: pointer;/*
+ 
+  color: black !important; /* Change color to black */
+  text-decoration: none !important; /* Remove underline */
 }
