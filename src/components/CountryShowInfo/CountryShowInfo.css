@@ -50,7 +50,8 @@
   margin-top: 5rem;
   display: flex;
   align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  gap: 1rem; /* Add gap between items */
 }
 .border > p {
   font-size: 16px;
@@ -66,4 +67,59 @@
 .btnflex {
   display: flex;
   align-items: center;
+  padding: 2rem 2rem !important;
+}
+
+@media screen and (max-width: 999px) {
+  .container {
+    margin: 0 3rem;
+    margin-top: 10rem;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center items */
+  }
+
+  .container .img,
+  .container .countryDetails {
+    width: 80%; /* Adjust width for full width */
+    margin-bottom: 2rem; /* Add spacing between sections */
+  }
+
+  .countryDetails {
+    padding: 2.5rem 3rem; /* Adjust padding */
+  }
+
+  .btn-back {
+    top: 8rem;
+    left: 3rem;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    margin: 0 2rem; /* Adjusted margin */
+    margin-top: 9em; /* Adjusted margin-top */
+  }
+
+  .container .img,
+  .container .countryDetails {
+    width: 100%; /* Adjusted width */
+  }
+
+  .countryDetails {
+    padding: 2.5rem; /* Adjusted padding */
+  }
+
+  .btn-back {
+    top: 8rem; /* Adjusted top position */
+    left: 2rem; /* Adjusted left position */
+  }
+}
+@media screen and (max-width: 599px) {
+  .countryDetails .subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
 }

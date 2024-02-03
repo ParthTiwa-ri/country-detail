@@ -1,12 +1,12 @@
 import Header from "../components/Header/Header";
 import Cards from "../components/Cards/Cards";
-// import Search from "./components/Search/Search";
+import Search from "../components/Search/Search";
 
 function Home() {
   return (
     <div className="app">
       <Header />
-      {/* <Search /> */}
+      <Search />
       <Cards />
     </div>
   );

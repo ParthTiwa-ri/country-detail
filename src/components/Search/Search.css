@@ -16,6 +16,8 @@
   height: 5rem;
   width: 19rem;
   position: relative;
+  cursor: pointer;
+  justify-content: space-between;
 }
 
 .input input {
@@ -39,4 +41,23 @@ input {
   color: gray;
   outline: none;
   font-size: 17px;
+}
+.filterMenu {
+  position: absolute;
+  z-index: 5;
+  width: 190px;
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 4px;
+  box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
+  transition: background-color 1s ease-in-out;
+  top: calc(100% + 3px); /* Position below the filter */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  left: 0; /* Align with the left edge of the filter */
+}
+
+.filterMenu p:hover {
+  color: gray;
 }
