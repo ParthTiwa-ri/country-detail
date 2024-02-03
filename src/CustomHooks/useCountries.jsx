@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 
-export function useCountries(query) {
+export function useCountries(url) {
   const [data, setData] = useState([]);
-  const [isloading, setLoading] = useState(false);
+  const [isLoading, setLoading] = useState(true);
 
   useEffect(
     function () {
       async function fetchdata() {
-        setLoading(true);
         try {
-          const res = await fetch(query);
+          // await new Promise((resolve) => setTimeout(resolve, 2000));
+          const res = await fetch(url);
           const dataload = await res.json();
           console.log(dataload);
           setData(dataload);
@@ -21,7 +21,7 @@ export function useCountries(query) {
       }
       fetchdata();
     },
-    [query]
+    [url]
   );
-  return { data, isloading };
+  return { data, isLoading };
 }

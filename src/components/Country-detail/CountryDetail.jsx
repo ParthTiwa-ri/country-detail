@@ -9,6 +9,7 @@ function CountryDetail() {
     `https://restcountries.com/v3.1/alpha/${id}`
   );
 
+  console.log(isLoading);
   return (
     <div className="cards">
       {isLoading ? <Loader /> : <h1>{data[0]?.name.common}</h1>}
