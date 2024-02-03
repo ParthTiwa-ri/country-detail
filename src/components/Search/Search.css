@@ -74,9 +74,9 @@ input {
   }
 
   .filter {
-    width: 30%;
-
+    min-width: 18rem;
     margin-bottom: 2rem;
+    align-self: flex-start;
   }
 
   .input {
