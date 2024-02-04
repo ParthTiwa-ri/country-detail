@@ -6,7 +6,7 @@
   align-items: center;
   box-shadow: 0 2px 8px 0 rgba(99, 99, 99, 0.2);
   padding: 2rem 6rem;
-  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .header h2 {
