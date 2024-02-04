@@ -12,7 +12,7 @@
   border: none;
   border-radius: 4px;
   box-shadow: 0 7px 29px 0 rgba(100, 100, 111, 0.2);
-  transition: background-color 0.7s ease-in-out, color 0.7s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
   /*cursor: pointer;/*
  
