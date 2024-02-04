@@ -42,7 +42,11 @@ function Search() {
         {selectedRegion ? selectedRegion : <p>Filter By Region</p>}
         <Unicons.UilAngleDown />
         {visible && (
-          <div className="filterMenu">
+          <div
+            className={`filterMenu ${
+              darkMode ? "dark-mode-filter" : "light-mode"
+            }`}
+          >
             <RegionOption region="All" setSelectedRegion={setSelectedRegion} />
             <RegionOption
               region="Africa"

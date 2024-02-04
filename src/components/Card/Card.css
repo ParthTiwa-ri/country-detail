@@ -10,6 +10,7 @@
   transition: all 500ms ease;
   color: inherit;
   text-decoration: none;
+
   /* transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out; */
 }
 
@@ -39,4 +40,9 @@ img {
   background-color: var(--dark-blue) !important;
   color: white;
   filter: grayscale(var(--image-grayscale));
+  /* z-index: -1; */
+}
+
+.filterMenu {
+  z-index: 10; /* or any value higher than the z-index of the cards */
 }
